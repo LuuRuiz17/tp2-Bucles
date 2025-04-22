@@ -8,7 +8,7 @@
 22
 1 */
 
-for(let i = 5; i > 0; i--){
+for(let i = 30; i > 0; i--){
     document.writeln(`<b>${i}</b>`);
     for(let j = i; j > 1; j--){
         if(i <= 9){
