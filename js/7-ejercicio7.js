@@ -8,15 +8,21 @@
 22
 1 */
 
-for(let i = 30; i > 0; i--){
-    document.writeln(`<b>${i}</b>`);
-    for(let j = i; j > 1; j--){
-        if(i <= 9){
-            document.writeln(`&nbsp;&nbsp;<b>${i}</b>`);    
+const numero = parseInt(prompt("Ingresa un número: "));
+
+if(numero <= 50){
+    for(let i = numero; i > 0; i--){
+        document.writeln(`<b>${i}</b>`);
+        for(let j = i; j > 1; j--){
+            if(i <= 9){
+                document.writeln(`&nbsp;&nbsp;<b>${i}</b>`);    
+            }
+            else{
+                document.writeln(`<b>${i}</b>`);
+            }
         }
-        else{
-            document.writeln(`<b>${i}</b>`);
-        }
+        document.writeln("<br>");
     }
-    document.writeln("<br>");
+}else{
+    alert("Ingresa un número menor o igual a 50.")
 }
